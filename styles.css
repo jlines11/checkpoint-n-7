@@ -1,0 +1,115 @@
+/* Body styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Styles for the shopping cart container */
+  #cart-container {
+    background-color: rgb(134, 109, 201)0), 38, 38); 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for each cart item */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #8d47a3; /* Border between cart items */
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect on cart item */
+  .cart-item:hover {
+    background-color: #f7f0ff; /* Light blue background on hover */
+  }
+  
+  /* Styles for product images */
+  .product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  /* Styles for item details */
+  .item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Button styles for quantity, delete, and like buttons */
+  .quantity-btn,
+  .delete-btn,
+  .like-btn {
+    background-color: #d3838e; /* Pinkish background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 8px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect on buttons */
+  .quantity-btn:hover,
+  .delete-btn:hover,
+  .like-btn:hover {
+    background-color: #d3838e; /* Darker pinkish background on hover */
+  }
+  
+  /* Styles for liked items */
+  .like-btn.liked {
+    background-color: rgb(232, 140, 74); /* Light orange background for liked items */
+  }
+  
+  /* Total container styles */
+  #total-container {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  /* Total price styles */
+  #total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: 2a40; /* Invalid color value, corrected to an example color */
+  }
+  
+  /* Background image for the body */
+  body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #8d47a3; /* Text color for better visibility on the background */
+  }
+  
+  /* Styles for like button icon */
+  .like-btn i {
+    font-size: 1.2em;
+  }
+  
+  /* Styles for heart symbol before like button */
+  .like-btn::before {
+    content: "\2665"; /* Unicode character for a heart symbol */
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  
+  /* Styles for trash bin symbol before delete button */
+  .delete-btn::before {
+    content: "\1F5D1"; /* Unicode character for a trash bin */
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  
